@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap");
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2% !important;
+}
+
+.select {
+    /* center */
+    margin: 0 auto;
+  width: 500px !important;
+}
+
+#resistor {
+  margin-top: 2%;
+}
+
+#bg {
+  background: url(4band.png) center/800px auto no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 25px;
+}
+
+.band {
+  width: 30px;
+  height: 143px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#first_div {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+#fourth_div {
+  margin-left: 70px;
+}
+
+#first_txt,
+#second_txt,
+#third_txt,
+#fourth_txt {
+  margin: 25px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  #bg {
+    background-size: 600px auto;
+    height: 150px;
+  }
+  .band {
+    width: 20px;
+    height: 105px;
+    margin-left: 20px;
+    margin-top: 23px;
+  }
+  #fourth_div {
+    margin-left: 60px;
+  }
+}
+
+/* responsive */
+@media (max-width: 575px) {
+  #bg {
+    background-size: 400px auto;
+    height: 100px;
+  }
+  .band {
+    width: 15px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  #fourth_div {
+    margin-left: 35px;
+  }
+  #first_txt,
+  #second_txt,
+  #third_txt,
+  #fourth_txt {
+    font-size: 20px;
+    margin: 20px;
+  }
+}
