@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- boostrap 5 -->
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
@@ -13,7 +13,9 @@
     <title>Practice-Resistor</title>
   </head>
   <body>
+    <!-- Header -->
     <h1>คำนวนตัวต้านทาน 4 แถบสี</h1>
+    <!-- Resistor -->
     <div id="resistor">
       <div id="bg">
         <div class="band" id="first_div"></div>
@@ -22,57 +24,69 @@
         <div class="band" id="fourth_div"></div>
       </div>
     </div>
-    <!-- select list -->
+    <!-- Select list -->
     <div>
-        <div class="select d-flex">
-            <select name="first" id="first" class="form-select ms-2 me-2 w-25">
-                <option value="ดำ" selected>ดำ</option>
-                <option value="น้ำตาล">น้ำตาล</option>
-                <option value="แดง">แดง</option>
-                <option value="ส้ม">ส้ม</option>
-                <option value="เหลือง">เหลือง</option>
-                <option value="เขียว">เขียว</option>
-                <option value="น้ำเงิน">น้ำเงิน</option>
-                <option value="ม่วง">ม่วง</option>
-                <option value="เทา">เทา</option>
-                <option value="ขาว">ขาว</option>
-            </select>
-            <select name="second" id="second" class="form-select me-2 w-25">
-                <option value="ดำ" selected>ดำ</option>
-                <option value="แดง">แดง</option>
-                <option value="ส้ม">ส้ม</option>
-                <option value="เหลือง">เหลือง</option>
-                <option value="เขียว">เขียว</option>
-                <option value="น้ำเงิน">น้ำเงิน</option>
-                <option value="ม่วง">ม่วง</option>
-                <option value="เทา">เทา</option>
-                <option value="ขาว">ขาว</option>
-            </select>
-            <select name="third" id="third" class="form-select me-2 w-25">
-                <option value="ดำ" selected>ดำ</option>
-                <option value="แดง">แดง</option>
-                <option value="ส้ม">ส้ม</option>
-                <option value="เหลือง">เหลือง</option>
-                <option value="เขียว">เขียว</option>
-                <option value="น้ำเงิน">น้ำเงิน</option>
-                <option value="ม่วง">ม่วง</option>
-                <option value="เทา">เทา</option>
-                <option value="ขาว">ขาว</option>
-            </select>
-            <select name="fourth" id="fourth" class="form-select me-2 w-25">
-                <option value="ทอง" selected>ทอง</option>
-                <option value="เงิน">เงิน</option>
-            </select>
-        </div>        
+      <div class="select d-flex">
+        <select name="first" id="first" class="form-select ms-2 me-2 w-25">
+          <option value="ดำ" selected>ดำ</option>
+          <option value="น้ำตาล">น้ำตาล</option>
+          <option value="แดง">แดง</option>
+          <option value="ส้ม">ส้ม</option>
+          <option value="เหลือง">เหลือง</option>
+          <option value="เขียว">เขียว</option>
+          <option value="น้ำเงิน">น้ำเงิน</option>
+          <option value="ม่วง">ม่วง</option>
+          <option value="เทา">เทา</option>
+          <option value="ขาว">ขาว</option>
+        </select>
+        <select name="second" id="second" class="form-select me-2 w-25">
+          <option value="ดำ" selected>ดำ</option>
+          <option value="แดง">แดง</option>
+          <option value="ส้ม">ส้ม</option>
+          <option value="เหลือง">เหลือง</option>
+          <option value="เขียว">เขียว</option>
+          <option value="น้ำเงิน">น้ำเงิน</option>
+          <option value="ม่วง">ม่วง</option>
+          <option value="เทา">เทา</option>
+          <option value="ขาว">ขาว</option>
+        </select>
+        <select name="third" id="third" class="form-select me-2 w-25">
+          <option value="ดำ" selected>ดำ</option>
+          <option value="แดง">แดง</option>
+          <option value="ส้ม">ส้ม</option>
+          <option value="เหลือง">เหลือง</option>
+          <option value="เขียว">เขียว</option>
+          <option value="น้ำเงิน">น้ำเงิน</option>
+          <option value="ม่วง">ม่วง</option>
+          <option value="เทา">เทา</option>
+          <option value="ขาว">ขาว</option>
+        </select>
+        <select name="fourth" id="fourth" class="form-select me-2 w-25">
+          <option value="ทอง" selected>ทอง</option>
+          <option value="เงิน">เงิน</option>
+        </select>
+      </div>
     </div>
-    <!-- show value -->
+    <!-- Show value -->
     <div style="margin-top: 20px">
       <div class="show">
         <h3 id="value">0 ohm</h3>
       </div>
     </div>
 
-    <!-- script -->
+    <footer class="container">
+      <a href="https://github.com/xNewz/practice-resistor" target="_blank"
+        ><img
+          src="https://img.shields.io/badge/Github-xNewz-blue?style=for-the-badge&logo=github"
+          alt="github"
+      /></a>
+      <img
+        src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge"
+        alt="license MIT"
+      />
+    </footer>
+
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>
