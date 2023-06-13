@@ -13,8 +13,8 @@ var res = {
   เงิน: 0.01,
 };
 
-// add event listener on class select
-document.querySelector(".select").addEventListener("change", function () {
+// when user click cal button
+document.getElementById("cal").addEventListener("click", function () {
   "use strict";
   var color1 = document.getElementById("first").value;
   var color2 = document.getElementById("second").value;
@@ -57,6 +57,24 @@ document.querySelector(".select").addEventListener("change", function () {
 
   // show value on id value
   document.getElementById("value").innerHTML = resistance + prefix + tolerance;
+});
+
+// when user click reset button
+document.getElementById("reset").addEventListener("click", function () {
+  "use strict";
+  document.getElementById("first").value = "ดำ";
+  document.getElementById("second").value = "ดำ";
+  document.getElementById("third").value = "ดำ";
+  document.getElementById("fourth").value = "ทอง";
+
+  // hide color
+  document.getElementById("first_div").style.backgroundColor = "transparent";
+  document.getElementById("second_div").style.backgroundColor = "transparent";
+  document.getElementById("third_div").style.backgroundColor = "transparent";
+  document.getElementById("fourth_div").style.backgroundColor = "transparent";
+
+  // hide value
+  document.getElementById("value").innerHTML = "";
 });
 
 function changeColor(color) {
