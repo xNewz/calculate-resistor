@@ -10,4 +10,4 @@ This is a simple resistor calculator that will calculate the resistance of a res
 MIT License
 
 ## Screenshots
-![ภาพ](https://user-images.githubusercontent.com/50146617/235371951-b6ede1c9-ada6-455c-a141-8e49702ccf8a.png)
+![ภาพ](https://github.com/xNewz/practice-resistor/assets/50146617/393e6bef-915a-4e07-8f3d-9c90ef88fc59)
