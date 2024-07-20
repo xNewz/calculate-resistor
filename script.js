@@ -1,16 +1,16 @@
 var res = {
-  ดำ: 0,
-  น้ำตาล: 1,
-  แดง: 2,
-  ส้ม: 3,
-  เหลือง: 4,
-  เขียว: 5,
-  น้ำเงิน: 6,
-  ม่วง: 7,
-  เทา: 8,
-  ขาว: 9,
-  ทอง: 0.1,
-  เงิน: 0.01,
+  black: 0,
+  brown: 1,
+  red: 2,
+  orange: 3,
+  yellow: 4,
+  green: 5,
+  blue: 6,
+  purple: 7,
+  gray: 8,
+  white: 9,
+  gold: 0.1,
+  silver: 0.01,
 };
 
 // when user click cal button
@@ -38,9 +38,9 @@ document.getElementById("cal").addEventListener("click", function () {
       (res[color1] * 10 + res[color2]) * Math.pow(10, res[color3]);
   }
   // tolerance
-  if (color4 == "ทอง") {
+  if (color4 == "gold") {
     var tolerance = " 5%";
-  } else if (color4 == "เงิน") {
+  } else if (color4 == "silver") {
     var tolerance = " 10%";
   }
 
@@ -62,10 +62,10 @@ document.getElementById("cal").addEventListener("click", function () {
 // when user click reset button
 document.getElementById("reset").addEventListener("click", function () {
   "use strict";
-  document.getElementById("first").value = "ดำ";
-  document.getElementById("second").value = "ดำ";
-  document.getElementById("third").value = "ดำ";
-  document.getElementById("fourth").value = "ทอง";
+  document.getElementById("first").value = "black";
+  document.getElementById("second").value = "black";
+  document.getElementById("third").value = "black";
+  document.getElementById("fourth").value = "gold";
 
   // hide color
   document.getElementById("first_div").style.backgroundColor = "transparent";
@@ -79,29 +79,29 @@ document.getElementById("reset").addEventListener("click", function () {
 
 function changeColor(color) {
   switch (color) {
-    case "ดำ":
+    case "black":
       return "black";
-    case "น้ำตาล":
+    case "brown":
       return "brown";
-    case "แดง":
+    case "red":
       return "red";
-    case "ส้ม":
+    case "orange":
       return "orange";
-    case "เหลือง":
+    case "yellow":
       return "yellow";
-    case "เขียว":
+    case "green":
       return "green";
-    case "น้ำเงิน":
+    case "blue":
       return "blue";
-    case "ม่วง":
+    case "purple":
       return "purple";
-    case "ทอง":
+    case "gold":
       return "gold";
-    case "เงิน":
+    case "silver":
       return "silver";
-    case "ขาว":
+    case "white":
       return "white";
-    case "เทา":
+    case "gray":
       return "gray";
   }
 }
